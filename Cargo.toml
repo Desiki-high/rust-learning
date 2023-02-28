@@ -10,14 +10,10 @@ opt-level = 1
 opt-level = 3
 
 [[bin]]
-name = "mini_grep"
+name = "mini-grep"
 path = "mini-grep/src/main.rs"
 
 [workspace]
-members = [
-    
-]
+members = []
 
 [dependencies]
-
-
