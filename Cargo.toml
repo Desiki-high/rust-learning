@@ -13,7 +13,12 @@ opt-level = 3
 name = "mini-grep"
 path = "mini-grep/src/main.rs"
 
+[[bin]]
+name = "try"
+path = "src/main.rs"
+
 [workspace]
 members = []
 
 [dependencies]
+num = "0.4.0"

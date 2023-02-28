@@ -1,4 +1,9 @@
+pub mod learn_num;
+
 fn main() {
-    assert!((0.1_f64 + 0.2 - 0.3).abs() < 0.00001);
-    //assert!(0.1 + 0.2 == 0.3);
+    learn_num::learn_float();
+    learn_num::learn_math();
+    learn_num::learn_bit_operation();
+    learn_num::learn_range();
+    learn_num::learn_complex();
 }
