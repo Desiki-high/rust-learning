@@ -1,5 +1,11 @@
 use num::complex::Complex;
 
+pub fn learn_int() {
+    let a: u8 = 255;
+    let b = a.wrapping_add(20);
+    println!("{}", b);
+}
+
 pub fn learn_float() {
     assert!((0.1_f64 + 0.2 - 0.3).abs() < 0.00001);
     // assert!(0.1 + 0.2 == 0.3);    //panic
@@ -94,4 +100,34 @@ pub fn learn_complex() {
     let result = a + b;
 
     println!("{} + {}i", result.re, result.im)
+}
+
+// char only use ''
+pub fn learn_char() {
+    let c = 'z';
+    let z = 'ℤ';
+    let g = '国';
+    let heart_eyed_cat = '😻';
+    println!("{}", c);
+    println!("{}", z);
+    println!("{}", g);
+    println!("{}", heart_eyed_cat);
+    println!(
+        "字符'{}'占用了{}字节的内存大小",
+        heart_eyed_cat,
+        std::mem::size_of_val(&heart_eyed_cat)
+    );
+    let mut i = 0;
+    for _ in '你'..='我' {
+        i += 1;
+    }
+    println!("你我相差: {}", i);
+}
+
+pub fn learn_bool() {
+    let _t = true;
+    let f: bool = false; // 使用类型标注,显式指定f的类型
+    if f {
+        println!("这是段毫无意义的代码");
+    }
 }
