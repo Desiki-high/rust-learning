@@ -1,2 +1,2 @@
 # rust-learning
-rust-learning
+learning rust
