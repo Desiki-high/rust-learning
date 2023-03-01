@@ -10,8 +10,8 @@ opt-level = 1
 opt-level = 3
 
 [[bin]]
-name = "mini-grep"
-path = "mini-grep/src/main.rs"
+name = "grep"
+path = "grep/src/main.rs"
 
 [[bin]]
 name = "guess"
