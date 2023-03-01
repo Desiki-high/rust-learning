@@ -1,3 +1,4 @@
+pub mod learn_owner;
 pub mod learn_type;
 
 fn main() {
@@ -9,4 +10,7 @@ fn main() {
     // learn_type::learn_complex();
     // learn_type::learn_char();
     // learn_type::learn_bool();
+
+    // learn_owner::learn_copy();
+    // learn_owner::learn_func_value();
 }
