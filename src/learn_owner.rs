@@ -8,7 +8,7 @@ pub fn learn_copy() {
     let s1 = String::from("hello");
     let _s2 = s1; //move copy, s1 will be can't use
 
-    //  println!("{}", s1); //compile error
+    // println!("{:?}", s1); //compile error
 
     let x: &str = "hello, world"; // x is an immutable reference of str(restore in stack)
     let y = x; // y is the copy of x (deep copy in stack)
@@ -16,16 +16,18 @@ pub fn learn_copy() {
 }
 
 pub fn learn_func_value() {
-    let s = String::from("hello"); // s 进入作用域
-
-    takes_ownership(s); // s 的值移动到函数里
+    let s1 = String::from("hello"); // s1 进入作用域
+    takes_ownership(s1); // s1 的值移动到函数里
 
     // 所以到这里s不再有效
 
+    let s2 = String::from("hello"); // s2 进入作用域
+    let s3 = return_ownership(s2); // s2 的值移动到函数里 最后返回并使用s2 接收
+    println!("s2 is: {:?}", s3);
+    // 所以到这里s不再有效
+
     let x = 5; // x 进入作用域
-
     makes_copy(x); // x 应该移动函数里,但 i32 是 Copy 的，所以在后面可继续使用 x
-
     println!("x:{}", x);
 }
 // 这里, x 先移出了作用域，然后是 s。但因为 s 的值已被移走，所以不会有特殊操作
@@ -35,6 +37,13 @@ fn takes_ownership(some_string: String) {
     println!("{}", some_string);
 }
 // 这里，some_string 移出作用域并调用 `drop` 方法。占用的内存被释放
+
+fn return_ownership(some_string: String) -> String {
+    // some_string 进入作用域
+    println!("{}", some_string);
+    some_string
+}
+//这里函数返回了some_string, 也就是移出了所有权 可以在调用函数中重新接收
 
 fn makes_copy(some_integer: i32) {
     // some_integer 进入作用域
