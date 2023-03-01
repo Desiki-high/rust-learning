@@ -1,4 +1,5 @@
 mod borrow;
+mod complex;
 mod owner;
 mod types;
 
@@ -22,3 +23,5 @@ pub fn learn_borrow() {
     borrow::learn_immut_ref();
     borrow::learn_mut_ref();
 }
+
+pub fn learn_complex() {}
