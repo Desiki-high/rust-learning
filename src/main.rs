@@ -1,3 +1,4 @@
+pub mod learn_borrow;
 pub mod learn_owner;
 pub mod learn_type;
 
@@ -13,4 +14,7 @@ fn main() {
 
     // learn_owner::learn_copy();
     // learn_owner::learn_func_value();
+
+    // learn_borrow::learn_immut_ref();
+    // learn_borrow::learn_mut_ref();
 }
