@@ -24,4 +24,11 @@ pub fn learn_borrow() {
     borrow::learn_mut_ref();
 }
 
-pub fn learn_complex() {}
+pub fn learn_complex() {
+    complex::learn_slice();
+    complex::learn_string();
+    complex::learn_tuple();
+    complex::learn_struct();
+    complex::learn_enum();
+    complex::learn_array();
+}
