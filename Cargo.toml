@@ -22,8 +22,10 @@ name = "try"
 path = "src/main.rs"
 
 [workspace]
-members = []
+members = ["learn"]
 
 [dependencies]
 num = "0.4.0"
 rand = "0.8.3"
+
+rust-learn = { version = "0.1.0", path = "learn" }
