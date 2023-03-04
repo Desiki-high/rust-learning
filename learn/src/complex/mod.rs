@@ -19,7 +19,9 @@ pub fn learn_tuple() {
     tuple::learn_tuple()
 }
 
-pub fn learn_struct() {}
+pub fn learn_struct() {
+    structs::learn_struct()
+}
 
 pub fn learn_enum() {}
 
