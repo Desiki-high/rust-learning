@@ -17,10 +17,6 @@ path = "grep/src/main.rs"
 name = "guess"
 path = "guess/src/main.rs"
 
-[[bin]]
-name = "learning"
-path = "src/main.rs"
-
 [workspace]
 members = ["learn", "problem"]
 
