@@ -23,6 +23,8 @@ pub fn learn_struct() {
     structs::learn_struct()
 }
 
-pub fn learn_enum() {}
+pub fn learn_enum() {
+    enums::learn_enum()
+}
 
 pub fn learn_array() {}
