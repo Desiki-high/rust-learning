@@ -7,9 +7,13 @@ mod string;
 mod structs;
 mod tuple;
 
-pub fn learn_slice() {}
+pub fn learn_slice() {
+    slice::learn_slice()
+}
 
-pub fn learn_string() {}
+pub fn learn_string() {
+    string::learn_string()
+}
 
 pub fn learn_tuple() {}
 
