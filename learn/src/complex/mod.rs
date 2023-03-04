@@ -15,7 +15,9 @@ pub fn learn_string() {
     string::learn_string()
 }
 
-pub fn learn_tuple() {}
+pub fn learn_tuple() {
+    tuple::learn_tuple()
+}
 
 pub fn learn_struct() {}
 
