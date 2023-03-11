@@ -7,26 +7,11 @@ mod string;
 mod structs;
 mod tuple;
 
-pub fn learn_slice() {
-    slice::learn_slice()
-}
-
-pub fn learn_string() {
-    string::learn_string()
-}
-
-pub fn learn_tuple() {
-    tuple::learn_tuple()
-}
-
-pub fn learn_struct() {
-    structs::learn_struct()
-}
-
-pub fn learn_enum() {
-    enums::learn_enum()
-}
-
-pub fn learn_array() {
-    array::learn_array()
+pub fn learn_complex() {
+    slice::learn_slice();
+    string::learn_string();
+    tuple::learn_tuple();
+    structs::learn_struct();
+    enums::learn_enum();
+    array::learn_array();
 }

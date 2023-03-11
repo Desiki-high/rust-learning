@@ -1,12 +1,23 @@
 use num::complex::Complex;
 
-pub fn learn_int() {
+pub fn learn_types() {
+    learn_int();
+    learn_float();
+    learn_math();
+    learn_bit_operation();
+    learn_range();
+    learn_complex();
+    learn_char();
+    learn_bool();
+}
+
+fn learn_int() {
     let a: u8 = 255;
     let b = a.wrapping_add(20);
     println!("{}", b);
 }
 
-pub fn learn_float() {
+fn learn_float() {
     assert!((0.1_f64 + 0.2 - 0.3).abs() < 0.00001);
     // assert!(0.1 + 0.2 == 0.3);    //panic
 
@@ -35,7 +46,7 @@ pub fn learn_float() {
     println!("{}", 13.14_f32.round());
 }
 
-pub fn learn_math() {
+fn learn_math() {
     let _sum = 5 + 10;
     let _difference = 95.5 - 4.3;
     let _product = 4 * 30;
@@ -67,7 +78,7 @@ pub fn learn_math() {
     println!("{:.2}", forty_twos[0]);
 }
 
-pub fn learn_bit_operation() {
+fn learn_bit_operation() {
     // 二进制为00000010
     let a: i32 = 2;
     // 二进制为00000011
@@ -85,7 +96,7 @@ pub fn learn_bit_operation() {
     println!("(a << b) value is {}", a);
 }
 
-pub fn learn_range() {
+fn learn_range() {
     for i in 1..=5 {
         println!("{}", i);
     }
@@ -94,7 +105,7 @@ pub fn learn_range() {
     }
 }
 
-pub fn learn_complex() {
+fn learn_complex() {
     let a = Complex { re: 2.1, im: -1.2 };
     let b = Complex::new(11.1, 22.2);
     let result = a + b;
@@ -103,7 +114,7 @@ pub fn learn_complex() {
 }
 
 // char only use ''
-pub fn learn_char() {
+fn learn_char() {
     let c = 'z';
     let z = 'ℤ';
     let g = '国';
@@ -124,7 +135,7 @@ pub fn learn_char() {
     println!("你我相差: {}", i);
 }
 
-pub fn learn_bool() {
+fn learn_bool() {
     let _t = true;
     let f: bool = false; // 使用类型标注,显式指定f的类型
     if f {

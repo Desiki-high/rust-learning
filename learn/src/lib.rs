@@ -6,14 +6,7 @@ mod pattern;
 mod types;
 
 pub fn learn_types() {
-    types::learn_int();
-    types::learn_float();
-    types::learn_math();
-    types::learn_bit_operation();
-    types::learn_range();
-    types::learn_complex();
-    types::learn_char();
-    types::learn_bool();
+    types::learn_types();
 }
 
 pub fn learn_owner() {
@@ -27,14 +20,13 @@ pub fn learn_borrow() {
 }
 
 pub fn learn_complex() {
-    complex::learn_slice();
-    complex::learn_string();
-    complex::learn_tuple();
-    complex::learn_struct();
-    complex::learn_enum();
-    complex::learn_array();
+    complex::learn_complex();
 }
 
 pub fn learn_control() {
     control::learn_control();
+}
+
+pub fn learn_pattern() {
+    pattern::learn_pattern();
 }
