@@ -1,6 +1,8 @@
 mod borrow;
 mod complex;
+mod control;
 mod owner;
+mod pattern;
 mod types;
 
 pub fn learn_types() {
@@ -31,4 +33,8 @@ pub fn learn_complex() {
     complex::learn_struct();
     complex::learn_enum();
     complex::learn_array();
+}
+
+pub fn learn_control() {
+    control::learn_control();
 }
