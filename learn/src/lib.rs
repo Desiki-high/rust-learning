@@ -1,6 +1,7 @@
 mod borrow;
 mod complex;
 mod control;
+mod method;
 mod owner;
 mod pattern;
 mod types;
@@ -29,4 +30,8 @@ pub fn learn_control() {
 
 pub fn learn_pattern() {
     pattern::learn_pattern();
+}
+
+pub fn learn_method() {
+    method::learn_method();
 }

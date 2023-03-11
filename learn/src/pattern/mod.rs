@@ -3,7 +3,6 @@
 mod example;
 mod guard;
 mod matchs;
-mod method;
 mod option;
 
 pub fn learn_pattern() {
