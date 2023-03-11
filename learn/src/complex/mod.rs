@@ -27,4 +27,6 @@ pub fn learn_enum() {
     enums::learn_enum()
 }
 
-pub fn learn_array() {}
+pub fn learn_array() {
+    array::learn_array()
+}
