@@ -8,6 +8,6 @@ fn main() {
     // rust_learn::learn_control();
     // rust_learn::learn_pattern();
     // rust_learn::learn_method();
-    rust_learn::learn_generics();
+    // rust_learn::learn_generics();
     rust_learn::learn_trait()
 }
