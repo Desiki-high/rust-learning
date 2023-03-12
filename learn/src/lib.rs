@@ -1,5 +1,6 @@
 #![allow(dead_code)]
 #![allow(unused_variables)]
+#![allow(unused_must_use)]
 mod borrow;
 mod complex;
 mod control;
