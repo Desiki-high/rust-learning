@@ -8,6 +8,7 @@ mod generics;
 mod method;
 mod owner;
 mod pattern;
+mod traits;
 mod types;
 
 pub fn learn_types() {
@@ -42,4 +43,8 @@ pub fn learn_method() {
 
 pub fn learn_generics() {
     generics::learn_generics();
+}
+
+pub fn learn_trait() {
+    traits::learn_trait();
 }
