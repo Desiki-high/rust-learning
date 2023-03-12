@@ -1,6 +1,7 @@
 mod borrow;
 mod complex;
 mod control;
+mod generics;
 mod method;
 mod owner;
 mod pattern;
@@ -34,4 +35,8 @@ pub fn learn_pattern() {
 
 pub fn learn_method() {
     method::learn_method();
+}
+
+pub fn learn_generics() {
+    generics::learn_generics();
 }
