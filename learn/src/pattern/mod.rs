@@ -1,5 +1,3 @@
-#![allow(dead_code)]
-#![allow(unused_variables)]
 mod example;
 mod guard;
 mod matchs;
