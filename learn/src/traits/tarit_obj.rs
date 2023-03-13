@@ -27,6 +27,12 @@ pub struct Button {
     pub label: String,
 }
 
+impl Button {
+    fn test(&self) {
+        println!("test");
+    }
+}
+
 impl Draw for Button {
     fn draw(&self) {
         println!("{:?}", self);
@@ -63,6 +69,10 @@ impl Screen {
     }
 }
 
+// 不是所有特征都能拥有特征对象，只有对象安全的特征才行。当一个特征的所有方法都有如下属性时，它的对象才是安全的：
+// 方法的返回类型不能是 Self
+// 方法没有任何泛型参数
+
 pub fn learn_tarit_obj() {
     let screen = Screen {
         components: vec![
@@ -82,7 +92,13 @@ pub fn learn_tarit_obj() {
             }),
         ],
     };
-
+    Button {
+        width: 50,
+        height: 10,
+        label: String::from("OK"),
+    }
+    .test();
+    // screen.components[0].test();  wrong: 特征对象中只包含了该特征的方法
     screen.run();
 }
 
