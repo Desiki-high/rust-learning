@@ -9,5 +9,6 @@ fn main() {
     // rust_learn::learn_pattern();
     // rust_learn::learn_method();
     // rust_learn::learn_generics();
-    rust_learn::learn_trait()
+    // rust_learn::learn_trait()
+    rust_learn::learn_collections();
 }

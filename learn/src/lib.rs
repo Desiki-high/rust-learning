@@ -2,6 +2,7 @@
 #![allow(unused_variables)]
 #![allow(unused_must_use)]
 mod borrow;
+mod collections;
 mod complex;
 mod control;
 mod generics;
@@ -10,7 +11,6 @@ mod owner;
 mod pattern;
 mod traits;
 mod types;
-
 pub fn learn_types() {
     types::learn_types();
 }
@@ -47,4 +47,8 @@ pub fn learn_generics() {
 
 pub fn learn_trait() {
     traits::learn_trait();
+}
+
+pub fn learn_collections() {
+    collections::learn_collections();
 }
