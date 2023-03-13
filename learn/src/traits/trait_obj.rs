@@ -8,7 +8,7 @@
 //     println!("{:?}", o);
 // }
 
-// pub fn learn_tarit_obj() {
+// pub fn learn_trait_obj() {
 //     let objects = [UiObject::Button, UiObject::SelectBox];
 
 //     for o in objects {
@@ -73,7 +73,7 @@ impl Screen {
 // 方法的返回类型不能是 Self
 // 方法没有任何泛型参数
 
-pub fn learn_tarit_obj() {
+pub fn learn_trait_obj() {
     let screen = Screen {
         components: vec![
             Box::new(SelectBox {
@@ -118,7 +118,7 @@ pub fn learn_tarit_obj() {
 //     }
 // }
 
-// pub fn learn_tarit_obj() {
+// pub fn learn_trait_obj() {
 //     let screen = Screen {
 //         components: vec![
 //             SelectBox {

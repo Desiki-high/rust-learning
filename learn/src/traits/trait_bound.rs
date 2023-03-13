@@ -37,7 +37,7 @@ impl<T: Display + PartialOrd> Pair<T> {
     }
 }
 
-pub fn learn_tarit_bound() {
+pub fn learn_trait_bound() {
     let pair = Pair { x: 12, y: 32 };
     pair.cmp_display();
 }

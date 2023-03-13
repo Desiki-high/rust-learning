@@ -25,7 +25,7 @@ fn add<T: Add<T, Output = T>>(a: T, b: T) -> T {
     a + b
 }
 
-pub fn learn_tarit_example() {
+pub fn learn_trait_example() {
     //为自定义类型实现 + 操作
     let p1 = Point {
         x: 1.1f32,
