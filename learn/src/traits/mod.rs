@@ -1,3 +1,4 @@
+mod trait_adv;
 mod trait_bound;
 mod trait_example;
 mod trait_obj;
@@ -10,6 +11,7 @@ pub fn learn_trait() {
     trait_bound::learn_trait_bound();
     trait_example::learn_trait_example();
     trait_obj::learn_trait_obj();
+    trait_adv::learn_trait_adv();
 }
 
 //使用特征作为函数参数 ，接收实现了Summary特征 的 item 参数。
