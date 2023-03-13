@@ -1,5 +1,6 @@
 mod tarit_bound;
 mod tarit_example;
+mod tarit_obj;
 mod trait_types;
 use trait_types::Summary;
 
@@ -8,6 +9,7 @@ pub fn learn_trait() {
     trait_types::learn_trait_type();
     tarit_bound::learn_tarit_bound();
     tarit_example::learn_tarit_example();
+    tarit_obj::learn_tarit_obj();
 }
 
 //使用特征作为函数参数 ，接收实现了Summary特征 的 item 参数。
