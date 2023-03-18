@@ -6,11 +6,13 @@ mod collections;
 mod complex;
 mod control;
 mod generics;
+mod lifetime;
 mod method;
 mod owner;
 mod pattern;
 mod traits;
 mod types;
+
 pub fn learn_types() {
     types::learn_types();
 }
@@ -51,4 +53,8 @@ pub fn learn_trait() {
 
 pub fn learn_collections() {
     collections::learn_collections();
+}
+
+pub fn learn_lifetime() {
+    lifetime::learn_lifetime();
 }
