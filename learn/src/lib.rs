@@ -9,6 +9,7 @@ mod generics;
 mod lifetime;
 mod method;
 mod owner;
+mod panic;
 mod pattern;
 mod traits;
 mod types;
@@ -57,4 +58,8 @@ pub fn learn_collections() {
 
 pub fn learn_lifetime() {
     lifetime::learn_lifetime();
+}
+
+pub fn learn_panic() {
+    panic::learn_panic();
 }
