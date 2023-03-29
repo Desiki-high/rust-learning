@@ -12,5 +12,6 @@ fn main() {
     // rust_learn::learn_trait()
     // rust_learn::learn_collections();
     // rust_learn::learn_lifetime();
-    rust_learn::learn_panic();
+    // rust_learn::learn_panic();
+    rust_learn::learn_result();
 }

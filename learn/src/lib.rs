@@ -11,6 +11,7 @@ mod method;
 mod owner;
 mod panic;
 mod pattern;
+mod result;
 mod traits;
 mod types;
 
@@ -62,4 +63,8 @@ pub fn learn_lifetime() {
 
 pub fn learn_panic() {
     panic::learn_panic();
+}
+
+pub fn learn_result() {
+    result::learn_result();
 }
